@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    margin: 0;
+    color: #333;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.contenido {
+    max-width: 49rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center;
+}
+
+.contenido-video {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: absolute;
+    overflow: hidden;
+}
+
+.contenido-video video {
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.contenido-color {
+    background-color: #303952;
+    position: absolute;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+.caja-texto {
+    z-index: 2;
+    width: 60vw;
+}
+
+.caja-texto h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+.caja-texto p {
+    font-size: 1.5rem;
+    padding: 2rem;
+    display: block;
+}
+
+a {
+    background-color: #c44569;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+}
+
+a:hover {
+    background: transparent;
+    border: 2px solid #c44569;
+}
+
+
+/*Responsive*/
+
+
+/*Para telefonos*/
+
+@media (max-width: 576px) {
+    .contenido {
+        max-width: 100%;
+        max-height: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin: auto;
+        text-align: center;
+    }
+    .contenido-video {
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        position: absolute;
+        overflow: hidden;
+    }
+    .contenido-video video {
+        min-width: 100vw;
+        min-height: 100vh;
+        width: 100%;
+        max-width: 100%;
+    }
+    .caja-texto {
+        margin-left: 5.5rem;
+    }
+    .caja-texto h1 {
+        font-size: 26px;
+    }
+    .caja-texto p {
+        font-size: 16px;
+        margin-top: -20px;
+        margin-bottom: -10px;
+    }
+    a {
+        padding: .5rem 1rem;
+        font-size: 15px;
+    }
+    body {
+        overflow-x: hidden;
+    }
+}
+
+
+/*Para tablet*/
+
+@media (max-width: 768px) {
+    .contenido {
+        max-width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin: auto;
+        text-align: center;
+    }
+    .contenido-video {
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        position: absolute;
+        overflow: hidden;
+    }
+    .contenido-video video {
+        min-width: 100vw;
+        min-height: 100vh;
+        width: 100%;
+    }
+    .caja-texto {
+        margin-left: 7rem;
+        width: 100%;
+        margin: auto;
+    }
+    .caja-texto h1 {
+        font-size: 29px;
+    }
+    .caja-texto {
+        font-size: 20px;
+        margin-top: -20px;
+        margin-bottom: -10px;
+    }
+    a {
+        padding: .5rem 2rem;
+    }
+    body {
+        overflow-x: hidden;
+    }
+}
+
+
+/*Computadoras medianas*/
+
+@media (max-width: 992px) {
+    header {
+        width: 100%;
+        height: 100%;
+    }
+    .caja-texto {
+        width: 100%;
+        margin-left: 7rem;
+        margin: auto;
+    }
+    .contenido {
+        max-width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin: auto;
+        text-align: center;
+    }
+    .contenido-video {
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        position: absolute;
+        overflow: hidden;
+    }
+    .contenido-video video {
+        min-width: 100vw;
+        min-height: 100vh;
+        width: 100%px;
+    }
+}
+
+@media (max-width: 1200px) {
+    header {
+        width: 100%;
+        height: 100%;
+    }
+    .caja-texto {
+        width: 100%;
+        margin-left: 7rem;
+        margin: auto;
+    }
+    .contenido {
+        max-width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin: auto;
+        text-align: center;
+    }
+    .contenido-video {
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        position: absolute;
+        overflow: hidden;
+    }
+    .contenido-video video {
+        min-width: 100vw;
+        min-height: 100vh;
+        width: 100%px;
+    }
+}
